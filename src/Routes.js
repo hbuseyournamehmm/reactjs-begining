@@ -1,5 +1,6 @@
 import React from 'react'
 import {BrowserRouter as Router,Switch,Route} from 'react-router-dom';
+import Contact from './components/Contact';
 import Deals from './components/Deals';
 import Home from './components/Home';
 import Offer from './components/Offer'
@@ -15,6 +16,7 @@ const Routes=()=> {
                 <Route exact path="/signup" component={Signup}/>
                 <Route exact path="/signin" component={Signin}/>
                 <Route exact path="/deals" component={Deals}/>
+                <Route exact path="/contact" component={Contact}/>
             </Switch>
         </Router>
     )
